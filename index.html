@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">¡NOS ENCANTÓ LEERTE!</h1>
+        <p class="intro" id="lblIntro">Porque se trata de brindarte siempre el mejor servicio, queremos conocer tu opinión sobre la experiencia recibida al utilizar nuestro WhatsApp el día  {{fecha}}. Por ello, te invitamos a que nos ayudes a completar esta breve encuesta.</p>
+        <p class="pregunta">👉  1. Basado en tu última experiencia ¿Recomendarías el WhatsApp del Banco Pichincha a tus amigos y/o familiares como medio para absolver dudas y consultas? </p>
+        <p class="intro">Escoge un número en la escala del 0 al 10, donde 0 significa  “Definitivamente no la recomendaría”😞 y 10, “Definitivamente sí la recomendaría” 😃</p>
+        <div class="radios">
+            <div class="radios-option">
+                <input type="radio" id="Calificacion0" name="Pregunta1" value="0">
+                <label for="Calificacion0">0</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion1" name="Pregunta1" value="1">
+                <label for="Calificacion1">1</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion2" name="Pregunta1" value="2">
+                <label for="Calificacion2">2</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion3" name="Pregunta1" value="3">
+                <label for="Calificacion3">3</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion4" name="Pregunta1" value="4">
+                <label for="Calificacion4">4</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion5" name="Pregunta1" value="5">
+                <label for="Calificacion5">5</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion6" name="Pregunta1" value="6">
+                <label for="Calificacion6">6</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion7" name="Pregunta1" value="7">
+                <label for="Calificacion7">7</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion8" name="Pregunta1" value="8">
+                <label for="Calificacion8">8</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion9" name="Pregunta1" value="9">
+                <label for="Calificacion9">9</label>
+            </div>
+            <div class="radios-option">
+                <input type="radio" id="Calificacion10" name="Pregunta1" value="10">
+                <label for="Calificacion10">10</label>
+            </div>
+        </div>
+
+        <label class="pregunta" for="inputPregunta2">👉 2. Cuéntanos, ¿por qué nos pusiste esa nota?</label>
+        <div class="pregunta2">
+            <textarea class="pregunta-respuestaTexto" id="inputPregunta2" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+        </div>
+
+
+        <!-- <div class="intro">Tu opinión nos ayudará a mejorar nuestro servicio por WhatsApp, ¡Muchas Gracias!</div>
+
+        <div class="despedida">
+            <p>¡Que tengas un excelente día!🙂</p>
+        </div> -->
+        <div class="botones">
+            <button id="btnEnviar" class ="boton" type="submit">Enviar Encuesta</button>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-dialog">
+              <section class="modal-content">
+                <p><strong>Tu opinión nos ayudará a mejorar nuestro servicio por WhatsApp, ¡Muchas Gracias!</strong></p>
+                <p>¡Que tengas un excelente día! 🙂</p>
+              </section>
+            </div>
+          </div>
+
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
